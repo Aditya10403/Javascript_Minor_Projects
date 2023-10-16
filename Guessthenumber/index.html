@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Basic-js-prj/style.css">
+  <title>Document</title>
+</head>
+
+<body class="text-white">
+  <nav class="w-full h-auto bg-slate-400 text-center">
+    <button class="bg-indigo-300 text-white font-semibold text-xl px-5 py-3 my-3 rounded-md"><a href="/Basic-js-prj/index.html">Home</a></button>
+  </nav>
+  <div class="wrapper bg-slate-800 flex flex-col justify-center items-center w-full h-[100vh]">
+    <h1 class="text-2xl text-cyan-300 mb-5 px-10 font-semibold">Number guessing game</h1>
+    <p class="text-indigo-50 mb-4">Try and guess a random number between 1 and 100.</p>
+    <p class="text-indigo-50 mb-4">You have 10 attempts to guess the right number.</p>
+    <form id="form" action="" class="flex flex-col gap-y-3 items-center">
+      <label2 for="guessField" class="text-3xl mb-5 text-teal-400">Guess a Number</label2>
+      <input id="guessField" class="text-center mb-4 w-full h-14 border-solid border-4 border-gray-400 text-black"  type="text">
+      <input id="sub" class="mb-4 bg-slate-900 rounded-lg w-9/12 px-3 py-3" type="submit" value="Submit Guess">
+    </form>
+    <div id="result" class="text-center">
+      <p>Previous Guesses : <span id="guesses" class="bg-slate-400 rounded-sm"></span></p>
+      <p>Guesses Remaining : <span id="lastresult">10</span></p>
+      <p id="loworhi" class="mt-4 text-2xl"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
